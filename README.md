@@ -6,8 +6,8 @@ on the [Zephyr Project](http://zephyrproject.org) RTOS from the Linux Foundation
 
 ### What's included
 
-* Based on v0.9.18 of phusion's modified ubuntu [baseimage](https://github.com/phusion/baseimage)
-* Zephyr SDK v0.7.2 installed at `/opt/zephyr-sdk` (can be overridden and rebuilt with the build argument `SDK_VERSION`)
+* Based on v0.9.18 of phusion's modified ubuntu [baseimage](https://github.com/phusion/baseimage-docker)
+* Zephyr SDK v0.7.5 installed at `/opt/zephyr-sdk` (can be overridden and rebuilt with the build argument `SDK_VERSION`)
 * python / make / gcc and friends
 
 ### Example w/ Hello World
