@@ -1,7 +1,7 @@
 FROM phusion/baseimage:0.9.18
 MAINTAINER marshall@kubos.co
 
-ARG SDK_VERSION=0.7.2
+ARG SDK_VERSION=0.7.5
 
 ENV ZEPHYR_BASE            /build
 ENV PATH                   $PATH:$ZEPHYR_BASE/scripts
