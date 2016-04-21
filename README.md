@@ -21,4 +21,4 @@ on the [Zephyr Project](http://zephyrproject.org) RTOS from the Linux Foundation
 2. Build and run the `hello_world` example in qemu
 
         $ cd ~/zephyr-project
-        $ docker run -v $PWD:/build -w /build/samples/microkernel/apps/hello_world -it marshallc/zephyr-project make qemu
+        $ docker run -v $PWD:/build -w /build/samples/hello_world/microkernel -it marshallc/zephyr-project make qemu
