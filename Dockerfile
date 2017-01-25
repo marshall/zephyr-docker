@@ -1,7 +1,7 @@
-FROM phusion/baseimage:0.9.18
+FROM phusion/baseimage
 MAINTAINER marshall@kubos.co
 
-ARG SDK_VERSION=0.7.2
+ARG SDK_VERSION=0.8.2
 
 ENV ZEPHYR_BASE            /build
 ENV PATH                   $PATH:$ZEPHYR_BASE/scripts
@@ -12,7 +12,7 @@ ENV ZEPHYR_SDK_INSTALL_DIR /opt/zephyr-sdk
 RUN mkdir /build
 
 RUN apt-get update
-RUN apt-get install -y wget git make gcc gcc-multilib g++ libc6-dev-i386 g++-multilib python
+RUN apt-get install -y wget git make gcc gcc-multilib g++ libc6-dev-i386 g++-multilib python bzip2
 RUN cd /tmp
 ADD https://nexus.zephyrproject.org/content/repositories/releases/org/zephyrproject/zephyr-sdk/$SDK_VERSION-i686/$ZEPHYR_SDK_SETUP /tmp
 RUN chmod 755 /tmp/$ZEPHYR_SDK_SETUP
